@@ -47,7 +47,7 @@ server {
         proxy_method      POST;
         proxy_set_header  Content-Type "application/json";
         proxy_set_body    '{"client_id":"$http_client_id","client_secret":"$http_client_secret","audience":"http://localhost/webhooks/rest/webhook","grant_type":"client_credentials"}';
-        proxy_pass        https://strai.eu.auth0.com/oauth/token;
+        proxy_pass        https://YOUR-AUTH0-tenant.com/oauth/token;
     }
 
   location /socket.io {

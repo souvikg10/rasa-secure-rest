@@ -56,7 +56,7 @@ class SecureRestInput(InputChannel):
             "audience": "http://localhost/webhooks/rest/webhook",
             "grant_type": "client_credentials",
         }
-        url = "https://strai.eu.auth0.com/oauth/token"
+        url = "https://YOUR-AUTH0-TENANT.com/oauth/token"
         response = requests.post(url, data)
         return response
 
